@@ -1,2 +1,4 @@
-# web-231
-intro to javascript repo
+# WEB 231 Enterprise JavaScript 1
+## Contributors
+* Richard Krasso 
+* Kailee Stephens 
