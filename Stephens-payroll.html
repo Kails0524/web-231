@@ -1,0 +1,64 @@
+<!--/*
+============================================
+; Title: Assignment 1.4
+; Author: Professor Krasso
+; Date: 25 June 2017
+; Modified By: Kailee Stephens
+; Description: This program demonstrates the
+; use of JavaScript types, values, and
+; and variables in an application.
+;===========================================
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <title>WEB 231 - Enterprise JavaScript 1</title>
+        <link rel="stylesheet" type="text/css" href="site.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </header>
+</html>
+<body>
+    <h1>Payroll System</h1>
+    <h3>Employee record 1</h3>
+    <div id="container">
+        <ul>
+            <li id="txtFirstNameLudwig"></li>
+            <li id="txtLastNameBeethoven"></li>
+            <li id="txtAddressLudwig"></li>
+            <li id="txtHireDateLudwig"></li>
+            <li id="txtPayRateLudwig" ></li>
+        </ul>
+    </div>
+    <script>
+        let txtFirstNameLudwig = document.getElementById("txtFirstNameLudwig").innerHTML = "Ludwig";
+        let txtLastNameBeethoven = document.getElementById("txtLastNameBeethoven").innerHTML = "Beethoven";
+        let txtAddressLudwig = document.getElementById("txtAddressLudwig").innerHTML = "505 main street";
+        const d = new Date();
+            let text = d.toLocaleDateString();
+            document.getElementById("txtHireDateLudwig").innerHTML = text; 
+        let txtPayRateLudwig = document.getElementById("txtPayRateLudwig").innerHTML = "18.9";
+    </script>
+        
+    <h3>Employee record 2</h3>
+    <div id="container"></div>
+        <ul>
+            <li id="txtFirstNameJohan"></li>
+            <li id="txtLastNameBach"></li>
+            <li id="txtAddressJohan"></li>
+            <li id="txtHireDateJohan"></li>
+            <li id="txtPayRateJohan" ></li>
+        </ul>
+    </div>
+
+    <script>
+        let txtFirstNameJohan = document.getElementById("txtFirstNameJohan").innerHTML = "Johan";
+        let txtLastNameBach = document.getElementById("txtLastNameBach").innerHTML = "Bach";
+        let txtAddressJohan = document.getElementById("txtAddressJohan").innerHTML = "512 main street";
+        const d = new Date();
+            let text = d.toLocaleDateString();
+            document.getElementById("txtHireDateJohan").innerHTML = text; 
+        let txtPayRateJohan = document.getElementById("txtPayRateJohan").innerHTML = "25.5";
+    </script>
+    
+</body>
