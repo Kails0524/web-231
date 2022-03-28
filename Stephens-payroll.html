@@ -21,7 +21,7 @@
 <body>
     <h1 style="text-align:center;">Payroll System</h1>
     <h3>Employee record 1</h3>
-    <div id="container" style="text-align:left">
+    <div id="container">
         <ul>
             <li id="txtFirstNameLudwig"></li>
             <li id="txtLastNameBeethoven"></li>
@@ -43,14 +43,13 @@
     <h3>Employee record 2</h3>
     <div id="container"></div>
         <ul>
-            <li id="txtFirstNameJohan"></li>
-            <li id="txtLastNameBach"></li>
+            <li id="txtFirstNameJohan">Johan</li>
+            <li id="txtLastNameBach">Bach</li>
             <li id="txtAddressJohan"></li>
             <li id="txtHireDateJohan"></li>
             <li id="txtPayRateJohan" ></li>
         </ul>
     </div>
-
     <script>
         let txtFirstNameJohan = document.getElementById("txtFirstNameJohan").innerHTML = "Johan";
         let txtLastNameBach = document.getElementById("txtLastNameBach").innerHTML = "Bach";
@@ -60,5 +59,26 @@
             document.getElementById("txtHireDateJohan").innerHTML = text; 
         let txtPayRateJohan = document.getElementById("txtPayRateJohan").innerHTML = "25.5";
     </script>
+
+    <h3>Employee record 3</h3>
+    <div id="container">
+        <ul>
+            <li id="txtFirstNameWolfgang"></li>
+            <li id="txtLastNameMozart"></li>
+            <li id="txtAddressWolfgang"></li>
+            <li id="txtHireDateWolfgang"></li>
+            <li id="txtPayRateWolfgang" ></li>
+        </ul>
+    </div>
+    <script>
+        let txtFirstNameWolfgang = document.getElementById("txtFirstNameWolfgang").innerHTML = "Wolfgang";
+        let txtLastNameMozart = document.getElementById("txtLastNameMozart").innerHTML = "Mozart";
+        let txtAddressWolfgang = document.getElementById("txtAddressWolfgang").innerHTML = "600 main street";
+        const d = new Date();
+            let text = d.toLocaleDateString();
+            document.getElementById("txtHireDateWolfgang").innerHTML = text; 
+        let txtPayRateWolfgang = document.getElementById("txtPayRateWolfgang").innerHTML = "50.1";
+    </script>
     
+    <a class="return-home" href="index.html">Return</a>
 </body>
