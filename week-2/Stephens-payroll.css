@@ -1,0 +1,19 @@
+/*
+============================================
+; Title: Payroll CSS 
+; Author: Kailee Stephens
+; Date: 27n March 2022
+; Modified By: Kailee Stephens
+; Description: Variables assignment 2.3 css file
+;===========================================
+*/ 
+
+.employeeOne, .employeeTwo, .employeeThree{
+    border-width:1px;
+    border-color:red;
+    border-style:dotted;
+}
+
+.employee-header{
+    text-align:center;
+}
