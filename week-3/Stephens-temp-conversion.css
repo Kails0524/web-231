@@ -8,24 +8,19 @@ body {
     font-weight: normal;
   }
   
-  /* container adjustment*/
-  #container {
-    padding: 10px;
-  }
+.card {
+    width:400px;
+}
   
-  /* styling to get the cards */
-  #temperature-input-card {
-    width: 600px;
-    margin: 3% auto 0;
-  }
   #form-results {
-    width: 600px;
+    width: 500px;
     margin: 3% auto 0;
   }
   
   /* adding the border radius to the convert button */
   .convertbtn {
     border-radius: 5px;
+    width:400px;
   }
   
   /* center the onClick results and proper font size */
