@@ -10,6 +10,8 @@ body {
   
 .card {
     width:400px;
+    align-content: center;
+
 }
   
   #form-results {
