@@ -9,9 +9,9 @@ body {
   }
   
 .card {
-    width:400px;
-    align-content: center;
-
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: 28px;
 }
   
   #form-results {
