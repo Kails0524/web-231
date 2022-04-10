@@ -28,26 +28,27 @@
     
                 <div class="form">
                     <div class="form-field"></div>
-                        <label>Guess the number:</label>
+                        <label >Guess the number:</label>
                         <input type="text" id="txtMyNumber" class="input" name="txtMyNumber" />
                     </div>
                     <div class="form-field">
-                        <button type="submit" id="btnSubmit">Submit</button>
+                        <button type="submit" class="btn btn-primary full-width" id="btnSubmit">Submit</button>
                     </div>
 
                 </div>
             </div>
-            <div id="form-results">
-                <div class="card">
-                  <div class="card-title">Results</div>
-                  <div class="card-content" id="guessResults"></div>
-                </div>
+        </div>
+        <div id="form-results">
+            <div class="card">
+                <div class="card-title">Results</div>
+                <div class="card-content" id="guessResults"></div>
             </div>
+        </div>
         </div>   
             <div id="return-container">
                 <a href="../index.html" class="return-home">Return</a>
             </div>
-    </body>
+    
         <script>
                 // randomly generated number between 1 and 10
                 const rnd = Math.floor(Math.random() * 10 + 1);
@@ -76,7 +77,5 @@
                 };
         
         </script>
-    </body>                 
-    
-
+    </body>           
 </html>
