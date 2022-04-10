@@ -1,0 +1,79 @@
+<!--
+; Title: Assignment 4.2
+; Author: Kailee Stephens
+; Date: 10 April 2022
+; Modified By: Kailee Stephens
+; Description: This program creates 
+; a simple numbers game.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="Stephens-number-game.css" />
+        <link rel="stylesheet" type="text/css" href="../global.css">
+    </head>     
+    
+    <body>
+        <h1>Welcome to the numbers game!</h1>
+        <div class="card">
+            <div class="card-title">
+                Pick a number between 1 and 10
+            </div>
+        
+            <div class="card-content">
+    
+                <div class="form">
+                    <div class="form-field"></div>
+                        <label>Guess the number:</label>
+                        <input type="text" id="txtMyNumber" class="input" name="txtMyNumber" />
+                    </div>
+                    <div class="form-field">
+                        <button type="submit" id="btnSubmit">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+            <div id="form-results">
+                <div class="card">
+                  <div class="card-title">Results</div>
+                  <div class="card-content" id="guessResults"></div>
+                </div>
+            </div>
+        </div>   
+            <div id="return-container">
+                <a href="../index.html" class="return-home">Return</a>
+            </div>
+    </body>
+        <script>
+                // randomly generated number between 1 and 10
+                const rnd = Math.floor(Math.random() * 10 + 1);
+
+                // on click function to calculate the user's input into a number value
+                // this function also binds the result to the guessResults HTML id above
+                document.getElementById("btnSubmit").onclick = function () {
+                // variable that will be used to calculate the if/else statements
+                let myNumber = document.getElementById("txtMyNumber").value;
+
+                // if the user's number is too high
+                if (myNumber > rnd) {
+                    document.getElementById("guessResults").innerHTML =
+                    "The number is less than " + myNumber;
+                }
+                // if the user's number is too low
+                else if (myNumber < rnd) {
+                    document.getElementById("guessResults").innerHTML =
+                    "The number is greater than " + myNumber;
+                }
+                // if user picks the correct number
+                else {
+                    document.getElementById("guessResults").innerHTML =
+                    "Congratulations! You picked the correct number!";
+                }
+                };
+        
+        </script>
+    </body>                 
+    
+
+</html>
