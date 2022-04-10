@@ -15,10 +15,9 @@ h1 {
   }
   
 #form-results {
-    width: 500px;
     margin: 3% auto 0;
   }
-  
+
   /* adding the border radius to the convert button */
 .btnSubmit {
     border-radius: 5px;
