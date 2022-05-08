@@ -1,0 +1,51 @@
+<!--/*
+============================================
+; Title: Exercise 8.2
+; Author: Kailee Stephens
+; Date: 8 May 2022
+; Modified By: Kailee Stephens
+; Description: 8.2 alphabet game assignment css file
+;===========================================
+*/ -->
+
+/* setting the font family */
+body {
+    font-family: Oswald, Verdana, Arial, san-serif;
+  }
+  
+  /* fixes the page header font */
+  h1 {
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  /* set container size and position */
+  #container {
+    width: 600px;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  
+  /* card styles */
+  .card {
+    width: 600px;
+    margin: 8% auto 0;
+  }
+  
+  /* adjusting the button width */
+  #btnFindLetter {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* spacing the return anchor tag */
+  #return-container {
+    margin-top: 20px;
+  }
+  
+  /* center and enlarger card 2 & 3 text */
+  #alphabet,
+  #alphabet-letter {
+    font-size: 28px;
+    text-align: center;
+  }
