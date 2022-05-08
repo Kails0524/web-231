@@ -1,0 +1,110 @@
+<!--/*
+============================================
+; Title: Exercise 8.2
+; Author: Kailee Stephens
+; Date: 8 May 2022
+; Modified By: Kailee Stephens
+; Description: 8.2 alphabet game assignment html file 
+;===========================================
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <title>WEB 231 - Enterprise JavaScript 1</title>
+        <!-- linked stylesheets -->
+        <link rel="stylesheet" type="text/css" href="Stephens-alphabet-game.css">
+        <link rel="stylesheet" type="text/css" href="../global.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </header>
+
+  <body>
+    <main id="container">
+      <!-- page header -->
+      <h1 class="app-header">Welcome to the Alphabet Game!</h1>
+
+      <!-- first card -->
+      <div class="card">
+        <div class="card-title">Alphabet Number Form</div>
+        <div class="card-content">
+          <div class="form">
+            <div class="form-field">
+              <!-- user input area -->
+              <label for="">Alphabet Letter Position</label>
+              <input
+                type="text"
+                name="txtPosition"
+                id="txtPosition"
+                class="txtPosition input"
+              />
+            </div>
+            <div class="form-field">
+              <button class="btn btn-primary" id="btnFindLetter">
+                Find Letter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- anchor tag back to the course landing page -->
+      <div id="return-container">
+        <a href="../index.html" class="return-home">Return</a>
+      </div>
+
+      <!-- second card to hold the alphabet letters-->
+      <div class="card">
+        <div class="card-title">Letters in the Alphabet</div>
+        <div class="card-content">
+          <div class="form">
+            <div id="alphabet"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- third card to display the results -->
+      <div class="card">
+        <div class="card-title">Results</div>
+        <div class="card-content">
+          <div id="alphabet-letter"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- start of javascript -->
+    <script>
+      //  alphabet array using spread syntax
+      const alphabet = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+
+      //  string to display the full alphabet
+      let alphabetOutput = "";
+
+      //  for/in loop to display alphabet list
+      for (let value in alphabet) {
+        alphabetOutput += alphabet[value] + ", ";
+      }
+
+      //  assign alphabetOutput to alphabet div
+      document.getElementById("alphabet").innerHTML = alphabetOutput.slice(
+        0,
+        -2
+      );
+
+      //  onclick function to find users letter
+      document.getElementById("btnFindLetter").onclick = function () {
+        let pos = document.getElementById("txtPosition").value;
+        //  linking each letter to the set position
+        let letter = alphabet[pos - 1];
+
+        //  bind output to html depending on the user input
+        if (letter == undefined) {
+          document.getElementById("alphabet-letter").innerHTML =
+            "There are not " + pos + " letters in the alphabet.";
+        } else {
+          document.getElementById("alphabet-letter").innerHTML =
+            letter + " is at position " + pos + " in the alphabet.";
+        }
+      };
+    </script>
+  </body>
+</html>
